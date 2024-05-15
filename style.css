@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 960px;
+    height: 960px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 2px solid black;
+}
+
+.reset {
+
+    text-align: center;
+    padding: 0px calc(0.2 * 960px);
+    border: 2px solid red;
+    margin-bottom: 10px;
+
+    font-size: large;
+    font-weight: bold;
+}
