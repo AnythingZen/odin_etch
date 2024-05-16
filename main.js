@@ -22,8 +22,14 @@ function makeSquare (numOfSquares) {
 makeSquare(numOfSquares);
 
 // made for when hover, color changes on square
-function changeColor (eachSquare) {
-    eachSquare.style.backgroundColor = 'black';
+function randomColor (eachSquare) {
+    color = [];
+
+    // generate random color
+    for (let i = 0; i < 3; i++) {
+        color[i] = Math.floor(Math.random() * 256);
+    }
+    eachSquare.style.backgroundColor = 'rgb(' + color.join(', ') + ')';
 }
 
 // changes color dynamically
@@ -31,7 +37,7 @@ container.addEventListener('mouseover', (event) => {
     const target = event.target;
 
     if (target.classList.contains('squares')) {
-        changeColor(target);
+        randomColor(target);
     }
 });
 

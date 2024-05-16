@@ -4,7 +4,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/* flow of idea :
+flex each item in the container to make them in row
+flex the squares on each of the row in column direction to stack them
+flex grow them respectively.
+ */
 .container {
     width: 960px;
     height: 960px;
